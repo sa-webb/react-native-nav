@@ -4,13 +4,22 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 import Home from './components/Home';
 import List from './components/List';
+import ArticleList from './components/ArticleList';
+import Article from './screens/Articles';
+import Alarm from './components/Alert';
+import HomeScreen from './screens/HomeScreen';
+import DetailsScreen from './screens/DetailsScreen';
 
 const RootStack = createStackNavigator({
-  List: List,
-  Home: Home
+  Articles: ArticleList,
+  Article: Article,
+  Home: Home,
+  Alert: Alarm,
+  HomeScreen: HomeScreen,
+  Details: DetailsScreen,
 },
 {
-  initialRouteName: 'List',
+  initialRouteName: 'HomeScreen',
 }  
 );
 
